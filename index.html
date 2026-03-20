@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wanderlust Journeys — Discover the World</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+
+</head>
+<body>
+ 
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <span class="brand-icon">✦</span> Wanderlust
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto align-items-center">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="destinations.html">Destinations</a></li>
+        <li class="nav-item"><a class="nav-link" href="tours.html">Tours</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item ms-3">
+          <a class="btn btn-book" href="contact.html">Book Now</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+ 
+<!-- HERO CAROUSEL -->
+<section id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active hero-slide" style="background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600');">
+      <div class="hero-overlay"></div>
+      <div class="carousel-caption hero-caption">
+        <p class="hero-sub">— Explore the Unknown</p>
+        <h1 class="hero-title">Breathe the <em>Mountains</em></h1>
+        <p class="hero-desc">Conquer peaks, discover serenity, and write your own alpine story.</p>
+        <a href="destinations.html" class="btn btn-hero">Explore Destinations</a>
+      </div>
+    </div>
+    <div class="carousel-item hero-slide" style="background-image: url('https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=1600');">
+      <div class="hero-overlay"></div>
+      <div class="carousel-caption hero-caption">
+        <p class="hero-sub">— Island Escapes</p>
+        <h1 class="hero-title">Where <em>Azure</em> Meets Infinity</h1>
+        <p class="hero-desc">Crystal waters, powdery shores, and sunsets that last forever.</p>
+        <a href="tours.html" class="btn btn-hero">View Tours</a>
+      </div>
+    </div>
+    <div class="carousel-item hero-slide" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGiyHhlBLrDY8OV1_SAPXxgLmqXsrRR_sVvw&s');">
+      <div class="hero-overlay"></div>
+      <div class="carousel-caption hero-caption">
+        <p class="hero-sub">— Cultural Journeys</p>
+        <h1 class="hero-title">Ancient <em>Wonders</em> Await</h1>
+        <p class="hero-desc">Temples, bazaars, and stories carved into the stone of time.</p>
+        <a href="destinations.html" class="btn btn-hero">Discover More</a>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</section>
+ 
+
+
+ 
+<!-- STATS -->
+<section class="stats-section">
+  <div class="container">
+    <div class="row text-center g-4">
+      <div class="col-6 col-md-3">
+        <div class="stat-item" data-count="120">
+          <h2 class="stat-number counter">120+</h2>
+          <p class="stat-label">Destinations</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="stat-item" data-count="15000">
+          <h2 class="stat-number counter">15K+</h2>
+          <p class="stat-label">Happy Travelers</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="stat-item" data-count="250">
+          <h2 class="stat-number counter">250+</h2>
+          <p class="stat-label">Tour Packages</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="stat-item" data-count="12">
+          <h2 class="stat-number counter">12</h2>
+          <p class="stat-label">Years of Excellence</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- FEATURED DESTINATIONS -->
+<section class="section-pad">
+  <div class="container">
+    <div class="section-header text-center mb-5">
+      <p class="section-tag">✦ Top Picks</p>
+      <h2 class="section-title">Featured <em>Destinations</em></h2>
+      <p class="section-sub">Handpicked places that will leave you breathless</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <div class="dest-card" onclick="window.location='destinations.html'">
+          <div class="dest-img" style="background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIztrdCsm7tl5rIBXiiT64EZlvIJkHB77UpA&s')"></div>
+          
+          <div class="dest-info">
+            <h4>Ooty, Tamil Nadu</h4>
+            <p>Rolling tea gardens, misty peaks, and heritage toy train rides</p>
+            <div class="dest-meta">
+              <span><i class="bi bi-clock"></i> 7 Days</span>
+              <span class="dest-price">From ₹35,199</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="dest-card" onclick="window.location='destinations.html'">
+        <div class="dest-img" style="background-image:url('images/amritsar.jpg')"></div> 
+          <div class="dest-info">
+            <h4>Amritsar, Punjab</h4>
+            <p>The golden glow of the Harmandir Sahib and rich heritage</p>
+            <div class="dest-meta">
+              <span><i class="bi bi-clock"></i> 5 Days</span>
+              <span class="dest-price">From ₹55,599</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="dest-card" onclick="window.location='destinations.html'">
+          <div class="dest-img" style="background-image:url('https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?w=600')"></div>
+          
+          <div class="dest-info">
+            <h4>Leh, Ladakh</h4>
+            <p>Crystal blue lakes, high mountain passes, and monastic silence</p>
+            <div class="dest-meta">
+              <span><i class="bi bi-clock"></i> 10 Days</span>
+              <span class="dest-price">From ₹75,499</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-5">
+      <a href="destinations.html" class="btn btn-outline-brand">View All Destinations <i class="bi bi-arrow-right ms-2"></i></a>
+    </div>
+  </div>
+</section>
+ 
+<!-- WHY CHOOSE US -->
+<section class="why-section section-pad">
+  <div class="container">
+    <div class="section-header text-center mb-5">
+      <p class="section-tag">✦ Our Promise</p>
+      <h2 class="section-title">Why Travel with <em>us</em></h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-3 col-6">
+        <div class="why-card text-center">
+          <div class="why-icon">
+            <i class="bi bi-check-lg text-white"></i></div>
+          <h5>Safe Travels</h5>
+          <p>Fully insured, vetted guides and 24/7 emergency support</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="why-card text-center">
+          <div class="why-icon"><i class="bi bi-currency-dollar"></i></div>
+          <h5>Best Price</h5>
+          <p>Guaranteed lowest rates — we match any comparable offer</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="why-card text-center">
+          <div class="why-icon"><i class="bi bi-headset"></i></div>
+          <h5>Expert Support</h5>
+          <p>Personal travel consultants available around the clock</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="why-card text-center">
+          <div class="why-icon"><i class="bi bi-globe2"></i></div>
+          <h5>120+ Destinations</h5>
+          <p>Curated journeys across every corner of India</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- TESTIMONIALS CAROUSEL -->
+<section class="section-pad testimonial-section">
+  <div class="container">
+    <div class="section-header text-center mb-5">
+      <p class="section-tag">✦ Traveler Stories</p>
+      <h2 class="section-title">What Our <em>Explorers</em> Say</h2>
+    </div>
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <div class="testimonial-card text-center">
+                <div class="stars mb-3">★★★★★</div>
+                <p class="testimonial-text">"Our trip to Amritsar was simply magical! Thanks to the team, every detail—from the hotel stay near the Golden Temple to the prompt, polite driver—was flawlessly arranged. A truly memorable, comfortable experience."</p>
+                <div class="testimonial-author">
+                  <img src="https://i.pravatar.cc/60?img=47" alt="Aanvi"/>
+                  <div>
+                    <strong>Aanvi Patel</strong>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <div class="testimonial-card text-center">
+                <div class="stars mb-3">★★★★★</div>
+                <p class="testimonial-text">"An absolutely memorable Ooty trip with top-notch service, a courteous driver, and well-planned itinerary made it a truly seamless, budget-friendly experience!" </p>
+                <div class="testimonial-author">
+                  <img src="https://i.pravatar.cc/60?img=12" alt="Rahul"/>
+                  <div>
+                    <strong>Rahul Verma</strong>
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <div class="testimonial-card text-center">
+                <div class="stars mb-3">★★★★★</div>
+                <p class="testimonial-text">"Our tour operator arranged everything perfectly, from the comfortable stays in Nubra to the breathtaking views at Pangong Lake. The driver was knowledgeable and kept us safe on the tough terrains. A truly once-in-a-lifetime experience! Wanderlust's team handled everything flawlessly."</p>
+                <div class="testimonial-author">
+                  <img src="https://i.pravatar.cc/60?img=32" alt="Priya"/>
+                  <div>
+                    <strong>Priya Sharma</strong>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-indicators testimonial-dots position-relative mt-4">
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2"></button>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- NEWSLETTER -->
+<section class="newsletter-section">
+  <div class="container">
+    <div class="newsletter-box text-center">
+      <p class="section-tag">✦ Stay Inspired</p>
+      <h2>Get Travel Deals <em>First</em></h2>
+      <p class="mb-4">Subscribe for exclusive offers, hidden gems, and travel inspo delivered weekly.</p>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="input-group newsletter-form">
+            <input type="email" class="form-control" placeholder="Your email address..."/>
+            <button class="btn btn-book">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <h4 class="footer-brand"><span class="brand-icon">✦</span> Wanderlust</h4>
+        <p class="footer-desc">Crafting unforgettable journeys since 2012. Your story begins here.</p>
+        <div class="social-links">
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-twitter-x"></i></a>
+          <a href="#"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-6">
+        <h6 class="footer-heading">Explore</h6>
+        <ul class="footer-links">
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="tours.html">Tours</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Gallery</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-6">
+        <h6 class="footer-heading">Company</h6>
+        <ul class="footer-links">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Partners</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <h6 class="footer-heading">Contact</h6>
+        <ul class="footer-links">
+          <li><i class="bi bi-geo-alt me-2"></i>42 Explorer St, Mumbai 400001</li>
+          <li><i class="bi bi-telephone me-2"></i>+91 98765 43210</li>
+          <li><i class="bi bi-envelope me-2"></i>travelwithwanderlust@gmail.com</li>
+        </ul>
+      </div>
+    </div>
+    <hr class="footer-hr"/>
+    <p class="footer-copy text-center">© 2026 Wanderlust Journeys. Crafted with ♥ for curious souls.</p>
+  </div>
+</footer>
+ 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="scripts.js"></script>
+</body>
+</html>

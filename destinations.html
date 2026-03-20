@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Destinations — Wanderlust Journeys</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
+  <link rel="stylesheet" href="styles.css"/>
+   <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><span class="brand-icon">✦</span> Wanderlust</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto align-items-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="destinations.html">Destinations</a></li>
+        <li class="nav-item"><a class="nav-link" href="tours.html">Tours</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item ms-3"><a class="btn btn-book" href="contact.html">Book Now</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero" style="background-image: url('https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1600')">
+  <div class="page-hero-overlay"></div>
+  <div class="container text-center page-hero-content">
+    <p class="section-tag" style="color:#f4c67a">✦ Explore the Globe</p>
+    <h1 class="page-hero-title">Our <em>Destinations</em></h1>
+    <p class="page-hero-sub">120+ breathtaking places waiting for your footsteps</p>
+  </div>
+</section>
+
+<!-- FILTER TABS -->
+<section class="filter-section">
+  <div class="container">
+    <div class="filter-bar text-center">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="spiritual">Spiritual Retreats</button>
+      <button class="filter-btn" data-filter="beaches">Coastal & Beaches</button>
+      <button class="filter-btn" data-filter="mountains">Hill Stations</button>
+      <button class="filter-btn" data-filter="heritage">Royal Heritage</button>
+      <button class="filter-btn" data-filter="wildlife">Jungle & Wildlife</button>
+    </div>
+  </div>
+</section>
+
+<!-- DESTINATION CARDS GRID -->
+<section class="section-pad">
+  <div class="container">
+    <div class="row g-4" id="destGrid">
+
+      <!-- Spiritual Retreats -->
+        <div class="col-lg-4 col-md-6 dest-item" data-cat="spiritual">
+  <div class="dest-card-v2">
+    <div class="dest-img-v2" style="background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_4hzXnQ2tSSy5_hVp4KqzGwI9OAEYzf9VgA&s')">
+      <div class="dest-rating"><i class="bi bi-star-fill"></i> 4.9</div>
+      <div class="dest-badge-v2">India</div>
+    </div>
+    <div class="dest-body">
+      <h4>Varanasi, UP</h4>
+      <p>Ancient river ghats, evening Ganga Aarti, and the eternal soul of Kashi.</p>
+      <div class="dest-tags">
+        <span>Ghats</span><span>Heritage</span><span>Peace</span>
+      </div>
+      <div class="dest-footer">
+        <div class="dest-info-mini"><i class="bi bi-clock"></i> 3 Days &nbsp; <i class="bi bi-people"></i> Family</div>
+        <span class="price-tag">₹12,499</span>
+      </div>
+      <a href="tours.html" class="btn btn-card-book w-100 mt-3">View Tours</a>
+    </div>
+  </div>
+</div>
+
+<div class="col-lg-4 col-md-6 dest-item" data-cat="spiritual">
+  <div class="dest-card-v2">
+    <div class="dest-img-v2" style="background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1Pl18_YMvVSoIU6Bfr-eeW3XPgKyUknzJYA&s')">
+      <div class="dest-rating"><i class="bi bi-star-fill"></i> 4.8</div>
+      <div class="dest-badge-v2">India</div>
+    </div>
+    <div class="dest-body">
+      <h4>Rishikesh, UK</h4>
+      <p>The yoga capital of the world, riverside meditation, and mountain air.</p>
+      <div class="dest-tags"><span>Yoga</span><span>Wellness</span><span>Adventure</span></div>
+      <div class="dest-footer">
+        <div class="dest-info-mini"><i class="bi bi-clock"></i> 5 Days &nbsp; <i class="bi bi-people"></i> Solo</div>
+        <span class="price-tag">₹15,999</span>
+      </div>
+      <a href="tours.html" class="btn btn-card-book w-100 mt-3">View Tours</a>
+    </div>
+  </div>
+</div>
+
+<div class="col-lg-4 col-md-6 dest-item" data-cat="spiritual">
+  <div class="dest-card-v2">
+    <div class="dest-img-v2" style="background-image:url('https://images.unsplash.com/photo-1514222134-b57cbb8ce073?w=600')">
+      <div class="dest-rating"><i class="bi bi-star-fill"></i> 4.9</div>
+      <div class="dest-badge-v2">India</div>
+    </div>
+    <div class="dest-body">
+      <h4>Amritsar, Punjab</h4>
+      <p>The serene Golden Temple, community service, and profound history.</p>
+      <div class="dest-tags"><span>Culture</span><span>Faith</span><span>Food</span></div>
+      <div class="dest-footer">
+        <div class="dest-info-mini"><i class="bi bi-clock"></i> 3 Days &nbsp; <i class="bi bi-people"></i> Group</div>
+        <span class="price-tag">₹11,499</span>
+      </div>
+      <a href="tours.html" class="btn btn-card-book w-100 mt-3">View Tours</a>
+    </div>
+  </div>
+</div>
+
+      <!-- Europe -->
+      <div class="col-lg-4 col-md-6 dest-item" data-cat="beaches">
+  <div class="dest-card-v2">
+    <div class="dest-img-v2" style="background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQisdQxEB1Ie_o0-EAKkUDn9JkjEKoGcskDpA&s')">
+      <div class="dest-rating"><i class="bi bi-star-fill"></i> 4.8</div>
+      <div class="dest-badge-v2">India</div>
+    </div>
+    <div class="dest-body">
+      <h4>South Goa</h4>
+      <p>Quiet golden sands, palm-fringed shorelines, and laid-back luxury.</p>
+      <div class="dest-tags">
+        <span>Relax</span><span>Beach</span><span>Sunset</span>
+      </div>
+      <div class="dest-footer">
+        <div class="dest-info-mini"><i class="bi bi-clock"></i> 4 Days &nbsp; <i class="bi bi-people"></i> Couples</div>
+        <span class="price-tag">₹14,499</span>
+      </div>
+      <a href="tours.html" class="btn btn-card-book w-100 mt-3">View Tours</a>
+    </div>
+  </div>
+</div>
+
+<div class="col-lg-4 col-md-6 dest-item" data-cat="beaches">
+  <div class="dest-card-v2">
+    <div class="dest-img-v2" style="background-image:url('https://images.unsplash.com/photo-1723203606060-b0390c387a81?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aGF2ZWxvY2slMjBpc2xhbmR8ZW58MHx8MHx8fDA%3D')">
+      <div class="dest-rating"><i class="bi bi-star-fill"></i> 5.0</div>
+      <div class="dest-badge-v2">Andaman</div>
+    </div>
+    <div class="dest-body">
+      <h4>Havelock Island</h4>
+      <p>Crystal clear turquoise waters and Asia's best-rated beaches.</p>
+      <div class="dest-tags"><span>Scuba</span><span>Island</span><span>Nature</span></div>
+      <div class="dest-footer">
+        <div class="dest-info-mini"><i class="bi bi-clock"></i> 6 Days &nbsp; <i class="bi bi-people"></i> Solo/Group</div>
+        <span class="price-tag">₹38,999</span>
+      </div>
+      <a href="tours.html" class="btn btn-card-book w-100 mt-3">View Tours</a>
+    </div>
+  </div>
+</div>
+
+<div class="col-lg-4 col-md-6 dest-item" data-cat="beaches">
+  <div class="dest-card-v2">
+    <div class="dest-img-v2" style="background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ47KkFejWKUCsnlXDk6oqXyoB-QISIK3hbHQ&s')">
+      <div class="dest-rating"><i class="bi bi-star-fill"></i> 4.7</div>
+      <div class="dest-badge-v2">Kerala</div>
+    </div>
+    <div class="dest-body">
+      <h4>Varkala, Kerala</h4>
+      <p>Unique red cliffs overlooking the Arabian Sea and bohemian vibes.</p>
+      <div class="dest-tags"><span>Cliffs</span><span>Yoga</span><span>Coastal</span></div>
+      <div class="dest-footer">
+        <div class="dest-info-mini"><i class="bi bi-clock"></i> 5 Days &nbsp; <i class="bi bi-people"></i> Solo</div>
+        <span class="price-tag">₹16,500</span>
+      </div>
+      <a href="tours.html" class="btn btn-card-book w-100 mt-3">View Tours</a>
+    </div>
+  </div>
+</div>
+
+      <!-- Hill Stations -->
+      <div class="col-lg-4 col-md-6 dest-item" data-cat="mountains">
+  <div class="dest-card-v2">
+    <div class="dest-img-v2" style="background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFRJjoiAICftM3tnDm-1jx78lwxvAYxTv_Dg&s')">
+      <div class="dest-rating"><i class="bi bi-star-fill"></i> 4.9</div>
+      <div class="dest-badge-v2">Himachal</div>
+    </div>
+    <div class="dest-body">
+      <h4>Manali, HP</h4>
+      <p>Snow-capped peaks, pine forests, and the gateway to Rohtang Pass.</p>
+      <div class="dest-tags">
+        <span>Snow</span><span>Adventure</span><span>Nature</span>
+      </div>
+      <div class="dest-footer">
+        <div class="dest-info-mini"><i class="bi bi-clock"></i> 5 Days &nbsp; <i class="bi bi-people"></i> Group</div>
+        <span class="price-tag">₹18,999</span>
+      </div>
+      <a href="tours.html" class="btn btn-card-book w-100 mt-3">View Tours</a>
+    </div>
+  </div>
+</div>
+
+<div class="col-lg-4 col-md-6 dest-item" data-cat="mountains">
+  <div class="dest-card-v2">
+    <div class="dest-img-v2" style="background-image:url('https://images.unsplash.com/photo-1593693397690-362cb9666fc2?w=600')">
+      <div class="dest-rating"><i class="bi bi-star-fill"></i> 4.8</div>
+      <div class="dest-badge-v2">Kerala</div>
+    </div>
+    <div class="dest-body">
+      <h4>Munnar, Kerala</h4>
+      <p>Rolling tea plantations, misty valleys, and rare Neelakurinji blooms.</p>
+      <div class="dest-tags"><span>Tea Gardens</span><span>Mist</span><span>Romance</span></div>
+      <div class="dest-footer">
+        <div class="dest-info-mini"><i class="bi bi-clock"></i> 4 Days &nbsp; <i class="bi bi-people"></i> Couples</div>
+        <span class="price-tag">₹21,500</span>
+      </div>
+      <a href="tours.html" class="btn btn-card-book w-100 mt-3">View Tours</a>
+    </div>
+  </div>
+</div>
+
+<div class="col-lg-4 col-md-6 dest-item" data-cat="mountains">
+  <div class="dest-card-v2">
+    <div class="dest-img-v2" style="background-image:url('https://images.unsplash.com/photo-1590737119156-f03306649721?w=600')">
+      <div class="dest-rating"><i class="bi bi-star-fill"></i> 4.7</div>
+      <div class="dest-badge-v2">Tamil Nadu</div>
+    </div>
+    <div class="dest-body">
+      <h4>Ooty, Tamil Nadu</h4>
+      <p>The Queen of Hills featuring botanical gardens, rose parks, and the historic toy train.</p>
+      <div class="dest-tags"><span>Nilgiris</span><span>Toy Train</span><span>Nature</span></div>
+      <div class="dest-footer">
+        <div class="dest-info-mini"><i class="bi bi-clock"></i> 7 Days &nbsp; <i class="bi bi-people"></i> Family</div>
+        <span class="price-tag">₹75,599</span>
+      </div>
+      <a href="tours.html" class="btn btn-card-book w-100 mt-3">View Tours</a>
+    </div>
+  </div>
+</div>
+
+<div class="col-lg-4 col-md-6 dest-item" data-cat="mountains">
+  <div class="dest-card-v2">
+    <div class="dest-img-v2" style="background-image:url('https://images.unsplash.com/photo-1581791534721-e599df4417f7?w=600')">
+      <div class="dest-rating"><i class="bi bi-star-fill"></i> 5.0</div>
+      <div class="dest-badge-v2">Ladakh</div>
+    </div>
+    <div class="dest-body">
+      <h4>Leh, Ladakh</h4>
+      <p>High-altitude desert landscapes, crystal lakes, and mountain passes.</p>
+      <div class="dest-tags"><span>Trekking</span><span>Lakes</span><span>Solo</span></div>
+      <div class="dest-footer">
+        <div class="dest-info-mini"><i class="bi bi-clock"></i> 8 Days &nbsp; <i class="bi bi-people"></i> Adventure</div>
+        <span class="price-tag">₹42,000</span>
+      </div>
+      <a href="tours.html" class="btn btn-card-book w-100 mt-3">View Tours</a>
+    </div>
+  </div>
+</div>
+
+      <!-- Royal Heritage -->
+      <div class="col-lg-4 col-md-6 dest-item" data-cat="heritage">
+  <div class="dest-card-v2">
+    <div class="dest-img-v2" style="background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAKyz2jubRc5OqvvsDlosQPIdtqd75V5ZBQQ&s')">
+      <div class="dest-rating"><i class="bi bi-star-fill"></i> 4.9</div>
+      <div class="dest-badge-v2">Rajasthan</div>
+    </div>
+    <div class="dest-body">
+      <h4>Jaipur</h4>
+      <p>The Pink City: home to the Hawa Mahal, Amer Fort, and royal legends.</p>
+      <div class="dest-tags">
+        <span>Palaces</span><span>Forts</span><span>Culture</span>
+      </div>
+      <div class="dest-footer">
+        <div class="dest-info-mini"><i class="bi bi-clock"></i> 3 Days &nbsp; <i class="bi bi-people"></i> Family</div>
+        <span class="price-tag">₹11,999</span>
+      </div>
+      <a href="tours.html" class="btn btn-card-book w-100 mt-3">View Tours</a>
+    </div>
+  </div>
+</div>
+
+<div class="col-lg-4 col-md-6 dest-item" data-cat="heritage">
+  <div class="dest-card-v2">
+    <div class="dest-img-v2" style="background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlTg5RAA6VEyrZJh_Ai2rnZ1dghUc70Buavg&s')">
+      <div class="dest-rating"><i class="bi bi-star-fill"></i> 4.8</div>
+      <div class="dest-badge-v2">Karnataka</div>
+    </div>
+    <div class="dest-body">
+      <h4>Hampi</h4>
+      <p>A UNESCO World Heritage site featuring the ruins of the Vijayanagara Empire.</p>
+      <div class="dest-tags"><span>History</span><span>Ruins</span><span>UNESCO</span></div>
+      <div class="dest-footer">
+        <div class="dest-info-mini"><i class="bi bi-clock"></i> 4 Days &nbsp; <i class="bi bi-people"></i> Group</div>
+        <span class="price-tag">₹16,500</span>
+      </div>
+      <a href="tours.html" class="btn btn-card-book w-100 mt-3">View Tours</a>
+    </div>
+  </div>
+</div>
+
+<div class="col-lg-4 col-md-6 dest-item" data-cat="heritage">
+  <div class="dest-card-v2">
+    <div class="dest-img-v2" style="background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaFiYRjD9ekl0rYidfr4BJQO9AP7tFbjZhUA&s')">
+      <div class="dest-rating"><i class="bi bi-star-fill"></i> 5.0</div>
+      <div class="dest-badge-v2">Rajasthan</div>
+    </div>
+    <div class="dest-body">
+      <h4>Udaipur</h4>
+      <p>The City of Lakes, famous for its marble palaces and romantic boat rides.</p>
+      <div class="dest-tags"><span>Luxury</span><span>Lakes</span><span>Romance</span></div>
+      <div class="dest-footer">
+        <div class="dest-info-mini"><i class="bi bi-clock"></i> 4 Days &nbsp; <i class="bi bi-people"></i> Couples</div>
+        <span class="price-tag">₹24,999</span>
+      </div>
+      <a href="tours.html" class="btn btn-card-book w-100 mt-3">View Tours</a>
+    </div>
+  </div>
+</div>
+
+      <!-- Jungle -->
+     <div class="col-lg-4 col-md-6 dest-item" data-cat="wildlife">
+  <div class="dest-card-v2">
+    <div class="dest-img-v2" style="background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY7JmbFFovyudE44Hxfdw9eriLcjn7MhWQag&s')">
+      <div class="dest-rating"><i class="bi bi-star-fill"></i> 4.8</div>
+      <div class="dest-badge-v2">Uttarakhand</div>
+    </div>
+    <div class="dest-body">
+      <h4>Jim Corbett</h4>
+      <p>India's oldest national park, famous for Bengal tigers and jungle safaris.</p>
+      <div class="dest-tags">
+        <span>Tigers</span><span>Safari</span><span>Nature</span>
+      </div>
+      <div class="dest-footer">
+        <div class="dest-info-mini"><i class="bi bi-clock"></i> 3 Days &nbsp; <i class="bi bi-people"></i> Group</div>
+        <span class="price-tag">₹15,499</span>
+      </div>
+      <a href="tours.html" class="btn btn-card-book w-100 mt-3">View Tours</a>
+    </div>
+  </div>
+</div>
+
+<div class="col-lg-4 col-md-6 dest-item" data-cat="wildlife">
+  <div class="dest-card-v2">
+    <div class="dest-img-v2" style="background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2RwlS0ymnHffIL8d740XuZu54JfG3SCrsLQ&s')">
+      <div class="dest-rating"><i class="bi bi-star-fill"></i> 4.9</div>
+      <div class="dest-badge-v2">Assam</div>
+    </div>
+    <div class="dest-body">
+      <h4>Kaziranga</h4>
+      <p>A UNESCO site home to two-thirds of the world's great one-horned rhinoceroses.</p>
+      <div class="dest-tags"><span>Rhinos</span><span>UNESCO</span><span>Jungle</span></div>
+      <div class="dest-footer">
+        <div class="dest-info-mini"><i class="bi bi-clock"></i> 4 Days &nbsp; <i class="bi bi-people"></i> Family</div>
+        <span class="price-tag">₹22,000</span>
+      </div>
+      <a href="tours.html" class="btn btn-card-book w-100 mt-3">View Tours</a>
+    </div>
+  </div>
+</div>
+
+<div class="col-lg-4 col-md-6 dest-item" data-cat="wildlife">
+  <div class="dest-card-v2">
+    <div class="dest-img-v2" style="background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj4atFLK8dV3ER68kOXqb-rHYWw0HqK9Yzbg&s')">
+      <div class="dest-rating"><i class="bi bi-star-fill"></i> 4.7</div>
+      <div class="dest-badge-v2">Gujarat</div>
+    </div>
+    <div class="dest-body">
+      <h4>Sasan Gir</h4>
+      <p>The only place in the world where you can see Asiatic Lions in the wild.</p>
+      <div class="dest-tags"><span>Lions</span><span>Wildlife</span><span>Rare</span></div>
+      <div class="dest-footer">
+        <div class="dest-info-mini"><i class="bi bi-clock"></i> 3 Days &nbsp; <i class="bi bi-people"></i> Group</div>
+        <span class="price-tag">₹12,999</span>
+      </div>
+      <a href="tours.html" class="btn btn-card-book w-100 mt-3">View Tours</a>
+    </div>
+  </div>
+</div>
+
+
+    <!-- No results -->
+    <div id="noResults" class="text-center py-5 d-none">
+      <i class="bi bi-compass" style="font-size:3rem; color:var(--accent)"></i>
+      <h4 class="mt-3">No destinations found</h4>
+      <p>Try a different region filter</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<section class="cta-banner">
+  <div class="container text-center">
+    <h2>Can't Find Your Dream Destination?</h2>
+    <p>Tell us where you want to go — we'll build a custom itinerary just for you.</p>
+    <a href="contact.html" class="btn btn-hero mt-3">Request Custom Tour</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <h4 class="footer-brand"><span class="brand-icon">✦</span> Wanderlust</h4>
+        <p class="footer-desc">Crafting unforgettable journeys since 2012.</p>
+        <div class="social-links">
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-twitter-x"></i></a>
+          <a href="#"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-6">
+        <h6 class="footer-heading">Explore</h6>
+        <ul class="footer-links">
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="tours.html">Tours</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-6">
+        <h6 class="footer-heading">Company</h6>
+        <ul class="footer-links">
+          <li><a href="#">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <h6 class="footer-heading">Contact</h6>
+        <ul class="footer-links">
+          <li><i class="bi bi-geo-alt me-2"></i>42 Explorer St, Mumbai 400001</li>
+          <li><i class="bi bi-telephone me-2"></i>+91 98765 43210</li>
+          <li><i class="bi bi-envelope me-2"></i>travelwithwanderlust@gmail.com</li>
+        </ul>
+      </div>
+    </div>
+    <hr class="footer-hr"/>
+    <p class="footer-copy text-center">© 2026 Wanderlust Journeys. Crafted with ♥ for curious souls.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="scripts.js"></script>
+</body>
+</html>
